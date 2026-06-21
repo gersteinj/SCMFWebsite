@@ -1,31 +1,33 @@
 ---
 import CalendarIcon from "../icons/lucide-calendar-days.svg";
 import MapIcon from "../icons/lucide-map.svg";
+const base = import.meta.env.BASE_URL;
 ---
 
+
 <ul class="menu w-80 text-lg">
-    <li><a href="/" class="text-2xl mb-8">Sussex County Maker Festival</a></li>
+    <li><a href=`${base}/` class="text-2xl mb-8">Sussex County Maker Festival</a></li>
     <li><a><CalendarIcon /> October 3 & 4, 2026</a></li>
     <li><a href="https://maps.app.goo.gl/DaNoj9MJ1BrWbz3j7" target="blank"><MapIcon /> Ideal Farm and Garden Center</a></li>
     <div class="divider divider-primary"></div>
-    <li><a href="/">Home</a></li>
-    <li><a href="/updates/">Updates</a></li>
-    <li><a href="/attend/">Attend</a></li>
+    <li><a href=`${base}/`>Home</a></li>
+    <li><a href=`${base}/updates/`>Updates</a></li>
+    <li><a href=`${base}/attend/`>Attend</a></li>
     <li>
         <h2 class="menu-title">Get Involved</h2>
         <ul>
-            <li><a href="/callforexhibitors/">Be an Exhibitor</a></li>
-            <li><a href="/callforvolunteers/">Volunteer With Us</a></li>
-            <li><a href="/becomeasponsor/">Sponsor SCMF</a></li>
+            <li><a href=`${base}/callforexhibitors/`>Be an Exhibitor</a></li>
+            <li><a href=`${base}/callforvolunteers/`>Volunteer With Us</a></li>
+            <li><a href=`${base}/becomeasponsor/`>Sponsor SCMF</a></li>
         </ul>
     </li>
     <li>
         <h2 class="menu-title">At SCMF</h2>
         <ul>
-            <li><a href="/exhibitors/">Our Exhibitors</a></li>
-            <li><a href="/sponsors">Our Sponsors</a></li>
+            <li><a href=`${base}/exhibitors/`>Our Exhibitors</a></li>
+            <li><a href=`${base}/sponsors/`>Our Sponsors</a></li>
             
         </ul>
     </li>
-    <li><a href="/contact/">Contact Us </a></li>
+    <li><a href=`${base}/contact/`>Contact Us </a></li>
 </ul>
