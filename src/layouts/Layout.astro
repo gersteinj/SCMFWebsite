@@ -1,0 +1,50 @@
+---
+import "../styles/main.css";
+import heroImage from "../images/farm-store-and-tomato-hero.jpeg";
+
+import NavMenu from "../components/NavMenu.astro";
+import MenuIcon from "../icons/lucide-menu.svg";
+
+const { pageTitle } = Astro.props;
+---
+
+<html data-theme="bumblebee" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<div class="drawer lg:drawer-open">
+			<input type="checkbox" id="nav-drawer" class="drawer-toggle" />
+			<!-- <div class="drawer-content flex flex-col items-center justify-center"> -->
+			<div class="drawer-content flex flex-col items-center">
+				<label
+					for="nav-drawer"
+					class="btn btn-square drawer-button fixed top-8 left-8 lg:hidden"
+				>
+					<MenuIcon />
+				</label>
+				<div
+					class="hero h-[30vh] mb-8"
+					style=`background-image:url(${heroImage.src}`
+					)
+				>
+				</div>
+
+				<slot />
+			</div>
+			<div class="drawer-side bg-base-200">
+				<label
+					for="nav-drawer"
+					aria-label="close-sidebar"
+					class="drawer-overlay"></label>
+				
+				<NavMenu />
+			</div>
+		</div>
+	</body>
+</html>
