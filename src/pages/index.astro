@@ -1,9 +1,34 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import HeroSection from '../components/HeroSection.astro';
+import HeroSection from "../components/HeroSection.astro";
+import GenericSection from "../components/GenericSection.astro";
 ---
 
 <Layout>
-<HeroSection />
+    <HeroSection />
+
+    <GenericSection name="About">
+        <p>Put info about SCMF here.</p>
+    </GenericSection>
+
+    <GenericSection name="Exhibitors">
+        <p>Show off exhibitors here</p>
+    </GenericSection>
+
+    <GenericSection name="Attend">
+        <p>Information for attending SCMF</p>
+    </GenericSection>
+
+    <GenericSection name="Get Involved">
+        <p>Information for helping with SCMF</p>
+    </GenericSection>
+
+    <GenericSection name="Our Partners">
+        <p>Sponsors</p>
+    </GenericSection>
+
+    <GenericSection name="Ideal Farm">
+        <p>Ideal Farm</p>
+    </GenericSection>
 </Layout>

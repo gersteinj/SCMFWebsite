@@ -1,0 +1,10 @@
+---
+const { name } = Astro.props;
+---
+
+
+<section class="p-8">
+    <h2 class="text-3xl" id=`${ name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-+|-+$/g, '')}`>{ name }</h2>
+
+    <slot />
+</section>
