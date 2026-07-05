@@ -3,58 +3,121 @@ import Layout from "../layouts/Layout.astro";
 
 import HeroSection from "../components/HeroSection.astro";
 import GenericSection from "../components/GenericSection.astro";
+// import H2AutoAnchor from "../components/H2AutoAnchor.astro";
+
+import Image from "astro/components/Image.astro";
 ---
 
 <Layout>
     <HeroSection />
+<main class="flex flex-col items-center">
 
     <GenericSection name="About">
-        <p>Since 2016, Sussex County Maker Fest has brought together creative, innovative people, artists, and DIY enthusiasts to celebrate and share their projects.</p>
+        <div class="flex flex-col lg:flex-row items-center gap-24">
 
-        <p>Hosted by Ideal Farm & Garden Center in Lafayette, NJ, Sussex County Maker Fest features a robot combat tournament hosted by GSCRL, Power Racing Series races, demonstrations, hands-on workshops, all alongside Ideal Farm's usual family-friendly fall activities.</p>
+            <div>
+                <p>
+                    Since 2016, Sussex County Maker Fest has brought together creative,
+                    innovative people, artists, and DIY enthusiasts to celebrate and
+                    share their projects.
+                </p>
+                
+                <p>
+                    Hosted by Ideal Farm & Garden Center in Lafayette, NJ, Sussex County
+                    Maker Fest features a robot combat tournament hosted by GSCRL, Power
+                    Racing Series races,demonstrations, hands-on workshops, all
+                    alongside Ideal Farm's usual family-friendly fall activities.
+                </p>
+            </div>
+            <Image src="https://placehold.co/400?text=Hello+World" alt="" width="400" height="400" />
+        </div>
     </GenericSection>
-
+    
     <GenericSection name="Exhibitors">
         <p>Show off exhibitors here</p>
     </GenericSection>
-
+    
     <GenericSection name="Attend">
-        <p>Sussex County Maker Fest is free to attend. We have a variety of activities and attractions for all ages, including:</p>
+        <p>
+            Sussex County Maker Fest is free to attend. We have a variety of
+            activities and attractions for all ages, including:
+        </p>
         <ul class="list-disc list-inside">
-            <li>Combat robots, with fights taking place throughout both days of the event. If you like BattleBots, you'll want to check this out.</li>
-            <li>Power Racing Series races. Come see what happens when you modify children's ride-on toys into electric go-karts on a $500 budget!</li>
+            <li>
+                Combat robots, with fights taking place throughout both days of
+                the event. If you like BattleBots, you'll want to check this
+                out.
+            </li>
+            <li>
+                Power Racing Series races. Come see what happens when you modify
+                children's ride-on toys into electric go-karts on a $500 budget!
+            </li>
             <li>Hands-on maker activities for adults and children.</li>
-            <li>Talks and demonstrations on a variety of topics, ranging from agriculture and biodiesel to electronics and digital technology.</li>
-            <li>All of Ideal Farm's usual fall activities, including hayrides and pumpkin picking.</li>
+            <li>
+                Talks and demonstrations on a variety of topics, ranging from
+                agriculture and biodiesel to electronics and digital technology.
+            </li>
+            <li>
+                All of Ideal Farm's usual fall activities, including hayrides
+                and pumpkin picking.
+            </li>
         </ul>
-
-        <p>Food will be available for purchase from food trucks onsite as well as baked goods and local favorites from Ideal Farm.</p>
-
+        
+        <p>
+            Food will be available for purchase from food trucks onsite as well
+            as baked goods and local favorites from Ideal Farm.
+        </p>
+        
         <p>TODO: Images</p>
-
-
     </GenericSection>
-
+    
     <GenericSection name="Get Involved">
-        <p>Sussex County Maker Fest can't happen without our exhibitors, volunteers, and sponsors.</p>
-
+        <p>
+            Sussex County Maker Fest can't happen without our exhibitors,
+            volunteers, and sponsors.
+        </p>
+        
         <h2 class="text-xl">Exhibitors</h2>
-        <p>We'd love for you or your organization to become a part of Sussex County Maker Fest. Agricultural speakers, crafters and makers, and STEM clubs are encouraged to participate. At Sussex County Maker Festival, we encourage new and different participants to join us. If you don't see your field mentioned in past events, fill out our Call for Exhibitors form and be the first!</p>
-        <p>Registration is free for exhibitors and educators, but there is a $50/day fee for vendors. If you're interested in both vending and exhibiting, please <a href="mailto:Ideal.Farms.Makers@protonmail.com">reach out</a> to discuss possible discounts or waivers.</p>
-        <a href="#" class="btn btn-primary text-primary-content">Exhibit or vend at SCMF</a>
+        <p>
+            We'd love for you or your organization to become a part of Sussex
+            County Maker Fest. Agricultural speakers, crafters and makers, and
+            STEM clubs are encouraged to participate. At Sussex County Maker
+            Festival, we encourage new and different participants to join us. If
+            you don't see your field mentioned in past events, fill out our Call
+            for Exhibitors form and be the first!
+        </p>
+        <p>
+            Registration is free for exhibitors and educators, but there is a
+            $50/day fee for vendors. If you're interested in both vending and
+            exhibiting, please <a
+            href="mailto:Ideal.Farms.Makers@protonmail.com">reach out</a
+            > to discuss possible discounts or waivers.
+        </p>
+        <a href="#" class="btn btn-primary text-primary-content"
+        >Exhibit or vend at SCMF</a
+        >
         <h2 class="text-xl">Volunteers</h2>
-        <p>If you want to help make SCMF happen, we'd love your help as a volunteer. While entry is free for everyone, we pride ourselves on having wonderful food for our volunteers. We welcome volunteers for the entire event or whatever portion you're available for.</p>
+        <p>
+            If you want to help make SCMF happen, we'd love your help as a
+            volunteer. While entry is free for everyone, we pride ourselves on
+            having wonderful food for our volunteers. We welcome volunteers for
+            the entire event or whatever portion you're available for.
+        </p>
         <h2 class="text-xl">Sponsors</h2>
-        <p>We deeply appreciate our sponsors, and couldn't make this event happen without them.</p>
+        <p>
+            We deeply appreciate our sponsors, and couldn't make this event
+            happen without them.
+        </p>
         <a href="#our-partners" class="btn btn-primary">Our Partners</a>
         <a href="#" class="btn btn-primary">Become a Sponsor</a>
     </GenericSection>
-
+    
     <GenericSection name="Our Partners">
         <p>Sponsors</p>
     </GenericSection>
-
+    
     <GenericSection name="Ideal Farm">
         <p>Ideal Farm</p>
     </GenericSection>
+</main>
 </Layout>
