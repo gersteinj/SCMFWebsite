@@ -3,9 +3,10 @@ import Layout from "../layouts/Layout.astro";
 
 import HeroSection from "../components/HeroSection.astro";
 import GenericSection from "../components/GenericSection.astro";
-// import H2AutoAnchor from "../components/H2AutoAnchor.astro";
+import SectionTitle from "../components/SectionTitle.astro";
 
 import Image from "astro/components/Image.astro";
+import EventLocationButton from "../components/EventLocationButton.astro";
 ---
 
 <Layout>
@@ -16,6 +17,7 @@ import Image from "astro/components/Image.astro";
         <div class="flex flex-col lg:flex-row items-center gap-24">
 
             <div>
+                <SectionTitle name="About" />
                 <p>
                     Since 2016, Sussex County Maker Fest has brought together creative,
                     innovative people, artists, and DIY enthusiasts to celebrate and
@@ -29,49 +31,63 @@ import Image from "astro/components/Image.astro";
                     alongside Ideal Farm's usual family-friendly fall activities.
                 </p>
             </div>
-            <Image src="https://placehold.co/400?text=Hello+World" alt="" width="400" height="400" />
+            <Image src="https://placehold.co/400?text=placeholder" alt="" width="400" height="400" />
         </div>
     </GenericSection>
     
+    <GenericSection name="Attend">
+        <SectionTitle name="Attend" />
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <div>
+                <h3 class="text-xl">Event Day and Location</h3>
+                <p>Sussex County Maker Fest is hosted by <a href="https://www.idealfarmandgarden.net">Ideal Farm and Garden Center</a> in Lafayette, NJ. The 2026 event will be on October 3rd and 4th, 2026.</p>
+                <EventLocationButton />
+                <p>TODO: Images</p>
+            </div>
+            <div>
+                
+                <p>
+                    Sussex County Maker Fest is free to attend. We have a variety of
+                    activities and attractions for all ages, including:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li>
+                        Combat robots, with fights taking place throughout both days of
+                        the event. If you like BattleBots, you'll want to check this
+                        out.
+                    </li>
+                    <li>
+                        Power Racing Series races. Come see what happens when you modify
+                        children's ride-on toys into electric go-karts on a $500 budget!
+                    </li>
+                    <li>Hands-on maker activities for adults and children.</li>
+                    <li>
+                        Talks and demonstrations on a variety of topics, ranging from
+                        agriculture and biodiesel to electronics and digital technology.
+                    </li>
+                    <li>
+                        All of Ideal Farm's usual fall activities, including hayrides
+                        and pumpkin picking.
+                    </li>
+                </ul>
+                
+                <p>
+                    Food will be available for purchase from food trucks onsite as well
+                    as baked goods and local favorites from Ideal Farm.
+                </p>
+            </div>
+        </div>
+        
+    </GenericSection>
+    
     <GenericSection name="Exhibitors">
+        <SectionTitle name="Exhibitors" />
         <p>Show off exhibitors here</p>
     </GenericSection>
     
-    <GenericSection name="Attend">
-        <p>
-            Sussex County Maker Fest is free to attend. We have a variety of
-            activities and attractions for all ages, including:
-        </p>
-        <ul class="list-disc list-inside">
-            <li>
-                Combat robots, with fights taking place throughout both days of
-                the event. If you like BattleBots, you'll want to check this
-                out.
-            </li>
-            <li>
-                Power Racing Series races. Come see what happens when you modify
-                children's ride-on toys into electric go-karts on a $500 budget!
-            </li>
-            <li>Hands-on maker activities for adults and children.</li>
-            <li>
-                Talks and demonstrations on a variety of topics, ranging from
-                agriculture and biodiesel to electronics and digital technology.
-            </li>
-            <li>
-                All of Ideal Farm's usual fall activities, including hayrides
-                and pumpkin picking.
-            </li>
-        </ul>
-        
-        <p>
-            Food will be available for purchase from food trucks onsite as well
-            as baked goods and local favorites from Ideal Farm.
-        </p>
-        
-        <p>TODO: Images</p>
-    </GenericSection>
-    
     <GenericSection name="Get Involved">
+        <SectionTitle name="Get Involved" />
         <p>
             Sussex County Maker Fest can't happen without our exhibitors,
             volunteers, and sponsors.
@@ -113,10 +129,12 @@ import Image from "astro/components/Image.astro";
     </GenericSection>
     
     <GenericSection name="Our Partners">
+        <SectionTitle name="Our Partners" />
         <p>Sponsors</p>
     </GenericSection>
     
     <GenericSection name="Ideal Farm">
+        <SectionTitle name="Ideal Farm" />
         <p>Ideal Farm</p>
     </GenericSection>
 </main>

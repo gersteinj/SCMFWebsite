@@ -4,11 +4,8 @@ const { name } = Astro.props;
 
 <section
     id=`${ name.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-+|-+$/g, '')}`
-    class="p-8 w-full lg:w-[80%] border border-accent scroll-mt-64 lg:scroll-mt-24"
+    class="p-8 w-full lg:w-[80%] bg-accent/4 border border-accent scroll-mt-64 lg:scroll-mt-24"
 >
-    <h2 class="text-3xl mb-4 text-center">
-        {name}
-    </h2>
 
     <slot />
 </section>
