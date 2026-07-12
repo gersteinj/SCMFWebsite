@@ -1,0 +1,67 @@
+---
+import GenericSection from "../components/GenericSection.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+
+import Image from "astro/components/Image.astro";
+import EventLocationButton from "../components/EventLocationButton.astro";
+import SectionSubtitle from "../components/SectionSubtitle.astro";
+---
+
+<GenericSection name="Attend">
+    <div class="flex flex-col">
+        <SectionTitle name="Attend" />
+        
+        <SectionSubtitle name="Event Day and Location" />
+            <p>
+                Sussex County Maker Fest is hosted by <a
+                href="https://www.idealfarmandgarden.net"
+                >Ideal Farm and Garden Center</a
+                > in Lafayette, NJ. The 2026 event will be on October 3rd and 4th,
+                2026. SCMF is free to attend and has a variety of activities and attractions
+                for all ages.
+            </p>
+            
+            <EventLocationButton />
+
+    </div>
+    <div class="flex flex-col lg:flex-row items-center lg:items-stretch">
+        <div class="flex flex-col justify-center">
+            <Image
+                src="https://placehold.co/400?text=placeholder"
+                alt=""
+                width="400"
+                height="400"
+            />
+        </div>
+        <div>
+            <p>What to expect:</p>
+            <ul class="list-disc list-inside">
+                <li>
+                    Combat robots, with fights taking place throughout both days
+                    of the event. If you like BattleBots, you'll want to check
+                    this out.
+                </li>
+                <li>
+                    Power Racing Series races. Come see what happens when you
+                    modify children's ride-on toys into electric go-karts on a
+                    $500 budget!
+                </li>
+                <li>Hands-on maker activities for adults and children.</li>
+                <li>
+                    Talks and demonstrations on a variety of topics, ranging
+                    from agriculture and biodiesel to electronics and digital
+                    technology.
+                </li>
+                <li>
+                    All of Ideal Farm's usual fall activities, including
+                    hayrides and pumpkin picking.
+                </li>
+            </ul>
+
+            <p>
+                Food will be available for purchase from food trucks onsite as
+                well as baked goods and local favorites from Ideal Farm.
+            </p>
+        </div>
+    </div>
+</GenericSection>

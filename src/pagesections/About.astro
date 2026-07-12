@@ -1,0 +1,33 @@
+---
+import GenericSection from "../components/GenericSection.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+
+import Image from "astro/components/Image.astro";
+---
+
+<GenericSection name="About">
+    <div class="flex flex-col lg:flex-row items-center lg:items-stretch">
+        <div class="flex flex-col justify-center">
+            <SectionTitle name="About" />
+            <p>
+                Since 2016, Sussex County Maker Fest has brought together
+                creative, innovative people, artists, and DIY enthusiasts to
+                celebrate and share their projects.
+            </p>
+
+            <p>
+                Hosted by Ideal Farm & Garden Center in Lafayette, NJ, Sussex
+                County Maker Fest features a robot combat tournament hosted by
+                GSCRL, Power Racing Series races,demonstrations, hands-on
+                workshops, all alongside Ideal Farm's usual family-friendly fall
+                activities.
+            </p>
+        </div>
+        <Image
+            src="https://placehold.co/400?text=placeholder"
+            alt=""
+            width="400"
+            height="400"
+        />
+    </div>
+</GenericSection>
