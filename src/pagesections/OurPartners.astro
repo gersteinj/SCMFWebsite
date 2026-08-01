@@ -2,10 +2,30 @@
 import GenericSection from "../components/GenericSection.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
+import idealfarm from "../assets/IdealFarm.jpg";
+import fubar from "../assets/fubarlabs_seal_new.png";
 ---
 
 <GenericSection name="Our Partners">
     <SectionTitle name="Our Partners" />
-    <p>Gallery of sponsors and link to sponsor info</p>
+
+    <div class="flex flex-col gap-4">
+
+        
+        <p>Additional sponsors coming soon. Want to join us? Please <a href="mailto:Ideal.Farms.Makers@protonmail.com">email us</a> for more information! You can also call us at 973-579-3893 between 9 AM and 5 PM - ask for Ben or Lindsey when you call.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            
+            <a href="https://www.idealfarmandgarden.net">
+                <Image src={idealfarm} alt="Ideal Farm Logo" />
+            </a>
+            <a href="https://fubarlabs.org">
+                <Image src={fubar} alt="FUBAR Labs Logo" />
+            </a>
+        </div>
+        
+    </div>
+    
+
 </GenericSection>

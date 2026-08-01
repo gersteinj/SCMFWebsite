@@ -5,10 +5,12 @@ import SectionTitle from "../components/SectionTitle.astro";
 import Image from "astro/components/Image.astro";
 import EventLocationButton from "../components/EventLocationButton.astro";
 import SectionSubtitle from "../components/SectionSubtitle.astro";
+
+import pumpkinpicking from "../img/2016/IMG_7765.JPG";
 ---
 
 <GenericSection name="Attend">
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-4">
         <SectionTitle name="Attend SCMF" />
 
         <SectionSubtitle name="Event Date and Location" />
@@ -21,43 +23,42 @@ import SectionSubtitle from "../components/SectionSubtitle.astro";
             for all ages.
         </p>
 
-    </div>
-    
-    <div class="card lg:card-side bg-base-200 shadow-sm">
-        <figure>
-            <img src="https://placehold.co/400?text=placeholder" alt="" />
-        </figure>
-        <div class="card-body">
-            <h3 class="card-title">What to Expect</h3>
-            <ul class="list-disc list-inside">
-                <li>
-                    Combat robots, with fights taking place throughout both days
-                    of the event. If you like BattleBots, you'll want to check
-                    this out.
-                </li>
-                <li>
-                    Power Racing Series races. Come see what happens when you
-                    modify children's ride-on toys into electric go-karts on a
-                    $500 budget!
-                </li>
-                <li>Hands-on maker activities for adults and children.</li>
-                <li>
-                    Talks and demonstrations on a variety of topics, ranging
-                    from agriculture and biodiesel to electronics and digital
-                    technology.
-                </li>
-                <li>
-                    All of Ideal Farm's usual fall activities, including
-                    hayrides and pumpkin picking.
-                </li>
-            </ul>
-            
-            <p>
-                Food will be available for purchase from food trucks onsite as
-                well as baked goods and local favorites from Ideal Farm.
-            </p>
-            <div class="card-actions justify-end">
-                <EventLocationButton />
+        <div class="card lg:card-side bg-base-200 shadow-sm">
+            <figure>
+                <img src={pumpkinpicking.src} alt="" class="max-w-md" />
+            </figure>
+            <div class="card-body">
+                <h3 class="card-title">What to Expect</h3>
+                <ul class="list-disc list-inside">
+                    <li>
+                        Combat robots, with fights taking place throughout both
+                        days of the event. If you like BattleBots, you'll want
+                        to check this out.
+                    </li>
+                    <li>
+                        Power Racing Series races. Come see what happens when
+                        you modify children's ride-on toys into electric
+                        go-karts on a $500 budget!
+                    </li>
+                    <li>Hands-on maker activities for adults and children.</li>
+                    <li>
+                        Talks and demonstrations on a variety of topics, ranging
+                        from agriculture and biodiesel to electronics and
+                        digital technology.
+                    </li>
+                    <li>
+                        All of Ideal Farm's usual fall activities, including
+                        hayrides and pumpkin picking.
+                    </li>
+                </ul>
+
+                <p>
+                    Food will be available for purchase from food trucks onsite
+                    as well as baked goods and local favorites from Ideal Farm.
+                </p>
+                <div class="card-actions justify-end">
+                    <EventLocationButton />
+                </div>
             </div>
         </div>
     </div>
