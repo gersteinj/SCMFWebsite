@@ -9,32 +9,26 @@ import SectionSubtitle from "../components/SectionSubtitle.astro";
 
 <GenericSection name="Attend">
     <div class="flex flex-col">
-        <SectionTitle name="Attend" />
-        
-        <SectionSubtitle name="Event Day and Location" />
-            <p>
-                Sussex County Maker Fest is hosted by <a
+        <SectionTitle name="Attend SCMF" />
+
+        <SectionSubtitle name="Event Date and Location" />
+        <p>
+            Sussex County Maker Fest is hosted by <a
                 href="https://www.idealfarmandgarden.net"
                 >Ideal Farm and Garden Center</a
-                > in Lafayette, NJ. The 2026 event will be on October 3rd and 4th,
-                2026. SCMF is free to attend and has a variety of activities and attractions
-                for all ages.
-            </p>
-            
-            <EventLocationButton />
+            > in Lafayette, NJ. The 2026 event will be on October 3rd and 4th, 2026.
+            SCMF is free to attend and has a variety of activities and attractions
+            for all ages.
+        </p>
 
     </div>
-    <div class="flex flex-col lg:flex-row items-center lg:items-stretch">
-        <div class="flex flex-col justify-center">
-            <Image
-                src="https://placehold.co/400?text=placeholder"
-                alt=""
-                width="400"
-                height="400"
-            />
-        </div>
-        <div>
-            <p>What to expect:</p>
+    
+    <div class="card lg:card-side bg-base-200 shadow-sm">
+        <figure>
+            <img src="https://placehold.co/400?text=placeholder" alt="" />
+        </figure>
+        <div class="card-body">
+            <h3 class="card-title">What to Expect</h3>
             <ul class="list-disc list-inside">
                 <li>
                     Combat robots, with fights taking place throughout both days
@@ -57,11 +51,14 @@ import SectionSubtitle from "../components/SectionSubtitle.astro";
                     hayrides and pumpkin picking.
                 </li>
             </ul>
-
+            
             <p>
                 Food will be available for purchase from food trucks onsite as
                 well as baked goods and local favorites from Ideal Farm.
             </p>
+            <div class="card-actions justify-end">
+                <EventLocationButton />
+            </div>
         </div>
     </div>
 </GenericSection>
