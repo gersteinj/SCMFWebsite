@@ -1,12 +1,15 @@
 ---
 import CalendarIcon from "../assets/icons/lucide-calendar-days.svg";
 import EventLocationButton from "./EventLocationButton.astro";
+
+
+import logo from '../assets/goat-logo.png';
 ---
 
 <div class="hero bg-base-300 min-h-[60vh]">
     <div class="hero-content flex-col lg:flex-row-reverse gap-8">
 
-        <img src="https://placehold.co/400?text=logo" class="max-w-sm rounded-lg shadow-2xl" alt="SCMF Logo">
+        <img src={logo.src} class="max-w-sm" alt="SCMF Logo">
         <div class="flex flex-col gap-4">
             <h1 class="text-5xl font-bold">Sussex County Maker Fest</h1>
             <p class="text-2xl font-bold">October 3 & 4, 2026</p>
